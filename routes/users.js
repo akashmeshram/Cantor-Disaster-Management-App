@@ -3,10 +3,10 @@ var router = express.Router();
 var Twitter = require('twitter');
 
 var client = new Twitter({
-  consumer_key: 'm7uenB2SwkFgfUx5NIocBhmmc',
-  consumer_secret: 'dO1JdkO8mPf3WDx05utJnBXXLXx75c7ive6X2yDgrwAlErYlbA',
-  access_token_key: '972862856298467328-4b1GaIZa8wbcitVGsFGyWTG4GEela9A',
-  access_token_secret: '7qcGLlUrKxLW3ooUZpQtqLUhrzx6OYp6SQNPaPiPUMqPh'
+  consumer_key: '',
+  consumer_secret: '',
+  access_token_key: '',
+  access_token_secret: ''
 });
 
 /* GET users listing. */
