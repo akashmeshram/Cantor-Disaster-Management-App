@@ -32,6 +32,7 @@ Emergencies and disasters impact population's health. Public health plays a crit
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 ### Prerequisites
+- GIT
 - Node.js
 - NPM (Node Packege Manager)
 - twitter API keys
