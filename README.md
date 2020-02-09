@@ -38,6 +38,12 @@ Emergencies and disasters impact population's health. Public health plays a crit
 
 ### Installing
 ```
+git clone https://github.com/akashmeshram/Cantor-Disaster-Management-App.git
+```
+```
+cd Cantor-Disaster-Management-App
+```
+```
 npm install
 ```
 
