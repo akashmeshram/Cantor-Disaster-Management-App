@@ -59,7 +59,7 @@ npm start
 - [Twitter for Node.js](https://www.npmjs.com/package/twitter) - Asyn client library
 
 ## ✍️ Authors <a name = "authors"></a>
-- [Akash Meshram](https://github.com/akashemeshram)
+- [Akash Meshram](https://github.com/akashmeshram)
 - [Atul Kumar](https://github.com/)
 - [Pritam Priyadarshi](https://github.com/)
 - [Rishabh Singhal](https://github.com/)
@@ -67,6 +67,6 @@ npm start
 
 ## 📝 License
 
-Copyright © 2020 [ Akash Meshramh](https://github.com/akashmeshram).<br />
+Copyright © 2020 [ Akash Meshram](https://github.com/akashmeshram).<br />
 This project is [MIT](https://github.com/akashmeshram/Cantor-Disaster-Management-App/blob/master/LICENSE) licensed.
 
