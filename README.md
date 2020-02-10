@@ -65,3 +65,8 @@ npm start
 - [Rishabh Singhal](https://github.com/)
 - [Vishwajeet Kumar](https://github.com/)
 
+## 📝 License
+
+Copyright © 2020 [ Akash Meshramh](https://github.com/akashmeshram).<br />
+This project is [MIT](https://github.com/akashmeshram/Cantor-Disaster-Management-App/blob/master/LICENSE) licensed.
+
