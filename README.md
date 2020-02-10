@@ -38,18 +38,18 @@ Emergencies and disasters impact population's health. Public health plays a crit
 - twitter API keys
 
 ### Installing
-```
+```sh
 git clone https://github.com/akashmeshram/Cantor-Disaster-Management-App.git
 ```
-```
+```sh
 cd Cantor-Disaster-Management-App
 ```
-```
+```sh
 npm install
 ```
 
 ## 🎈 Usage <a name="usage"></a>
-```
+```sh
 npm start
 ```
 
