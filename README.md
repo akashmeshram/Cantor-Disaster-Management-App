@@ -62,7 +62,7 @@ npm start
 - [Akash Meshram](https://github.com/akashmeshram)
 - [Atul Kumar](https://github.com/)
 - [Pritam Priyadarshi](https://github.com/)
-- [Rishabh Singhal](https://github.com/)
+- [Rishabh Singhal](https://github.com/rishabh30)
 - [Vishwajeet Kumar](https://github.com/)
 
 ## 📝 License
