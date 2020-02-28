@@ -61,7 +61,7 @@ npm start
 ## ✍️ Authors <a name = "authors"></a>
 - [Akash Meshram](https://github.com/akashmeshram)
 - [Atul Kumar](https://github.com/)
-- [Pritam Priyadarshi](https://github.com/)
+- [Pritam Priyadarshi](https://github.com/pritampriyadarshi)
 - [Rishabh Singhal](https://github.com/rishabh30)
 - [Vishwajeet Kumar](https://github.com/)
 
