@@ -25,8 +25,17 @@ function startExpressServer() {
   app.use(cookieParser());
   app.use(express.static(path.join(__dirname, '../public')));
 
+  const db = require("./data/database")
+
+  try {
+    db.authenticate();
+    console.log('Connection has been established successfully.');
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
+
   require('./routes/index')(app);
-  require('./routes/users')(app);
+  require('./routes/userdata')(app);
 
   app.get('*', (req, res) => res.status(404).send({ error: 'API not found.' }));
 
