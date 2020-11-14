@@ -3,11 +3,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
 // If environment provides a port, lets take it
-const PORT = process.env.PORT || 3004;
+const PORT = process.env.PORT || 8080;
 const NODES = 3
 
 initialize();
@@ -28,8 +25,8 @@ function startExpressServer() {
   app.use(cookieParser());
   app.use(express.static(path.join(__dirname, '../public')));
 
-  app.use('/', indexRouter);
-  app.use('/users', usersRouter);
+  require('./routes/index')(app);
+  require('./routes/users')(app);
 
   app.get('*', (req, res) => res.status(404).send({ error: 'API not found.' }));
 
