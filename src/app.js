@@ -6,17 +6,39 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var app = express();
+// If environment provides a port, lets take it
+const PORT = process.env.PORT || 3004;
+const NODES = 3
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../public')));
+initialize();
 
-console.log(__dirname)
+function initialize() {
+  startExpressServer();
+}
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+function startExpressServer() {
+  var app = express();
 
-module.exports = app;
+  if (process.env.APP_ENV === 'development') {
+    app.use(logger('dev'));
+  }
+
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: false }));
+  app.use(cookieParser());
+  app.use(express.static(path.join(__dirname, '../public')));
+
+  app.use('/', indexRouter);
+  app.use('/users', usersRouter);
+
+  app.get('*', (req, res) => res.status(404).send({ error: 'API not found.' }));
+
+  app.listen(PORT, (error) => {
+		if (error) {
+			return console.log('something bad happened', error);
+		} else {
+			console.log(`Server started Listening on ${PORT} ...`);
+		}
+	});
+}
+
