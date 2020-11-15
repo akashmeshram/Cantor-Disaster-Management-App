@@ -3,11 +3,23 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+const decryptCredentials = require('./utils/kms');
+
 // If environment provides a port, lets take it
 const PORT = process.env.PORT || 8080;
 const NODES = 3
 
-initialize();
+if (!global.config) {
+	decryptCredentials()
+		.then((config) => {
+			global.config = config;
+		})
+		.then(() => {
+			initialize();
+		});
+} else {
+	initialize();
+}
 
 function initialize() {
   startExpressServer();
